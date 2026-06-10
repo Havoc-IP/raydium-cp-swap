@@ -50,8 +50,9 @@ The program assets are in-scope for Raydium’s [Immunefi bug bounty program](ht
    platform-tools v1.48
    rustc 1.84.1
 
-8. Build
+## Safe Build
    ```shell
+      agave-install init 2.3.5
       anchor build 
    ```   
 
