@@ -12,6 +12,12 @@ The program assets are in-scope for Raydium’s [Immunefi bug bounty program](ht
 
 ## Environment Setup
 
+1. Install Dependencies
+
+   ```shell
+   sudo apt-get update && sudo apt-get install -y pkg-config build-essential libudev-dev libssl-dev llvm libclang-dev protobuf-compiler
+   ```
+   
 1. Install `Rust`
 
    ```shell
