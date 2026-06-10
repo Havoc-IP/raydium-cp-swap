@@ -17,7 +17,35 @@ The program assets are in-scope for Raydium’s [Immunefi bug bounty program](ht
    ```shell
    sudo apt-get update && sudo apt-get install -y pkg-config build-essential libudev-dev libssl-dev llvm libclang-dev protobuf-compiler
    ```
+
+2. Install Rust Toolchain
+   ```shell
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh source $HOME/.cargo/env
+   ```
    
+3. Install Solana CLI (v2.3.5)
+   ```shell
+   sh -c "$(curl -sSfL https://release.anza.xyz/v2.3.5/install)" echo 'export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"' >> ~/.bashrc source ~/.bashrc   
+   ```
+4. Install Anchor Version Manager 
+   ```shell  
+   cargo install --git https://github.com/coral-xyz/anchor avm --locked --force echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc source ~/.bashrc      
+   ```
+5. Install Project Specfic Version
+   ```shell
+   avm install 0.32.1
+   avm use 0.32.1
+   ```
+6. Build from directory 
+   ```shell
+   rm -rf target Cargo.lock
+   agave-install init 2.3.5
+   anchor build
+   ```
+
+ORIGINAL 
+   
+
 1. Install `Rust`
 
    ```shell
