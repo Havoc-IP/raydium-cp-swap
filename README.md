@@ -36,12 +36,24 @@ The program assets are in-scope for Raydium’s [Immunefi bug bounty program](ht
    avm install 0.32.1
    avm use 0.32.1
    ```
-6. Build from directory 
+6. Set proper environment  
    ```shell
    rm -rf target Cargo.lock
    agave-install init 2.3.5
-   anchor build
    ```
+7. Check versions 
+   ```shell
+   cargo-build-sbf --version
+   ```
+## Should produce    
+   solana-cargo-build-sbf 2.3.5
+   platform-tools v1.48
+   rustc 1.84.1
+
+8. Build
+   ```shell
+      anchor build 
+   ```   
 
 ORIGINAL 
    
