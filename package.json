@@ -1,7 +1,9 @@
 {
     "scripts": {
         "lint:fix": "prettier */*.js \"*/**/*{.js,.ts}\" -w",
-        "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check"
+        "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check",
+        "solana:set": "agave-install init 2.5.0",
+        "solana:reset": "agave-install init stable"
     },
     "dependencies": {
         "@coral-xyz/anchor": "0.32.1",

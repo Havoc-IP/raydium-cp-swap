@@ -3,9 +3,11 @@ resolver = "2"
 members = ["programs/*", "client"]
 
 [profile.release]
-overflow-checks = true
 lto = "fat"
 codegen-units = 1
+# added since only top level optimizations are implemented 
+panic = "abort"
+overflow-checks = true
 [profile.release.build-override]
 opt-level = 3
 incremental = false
